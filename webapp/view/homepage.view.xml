@@ -1,0 +1,18 @@
+<mvc:View controllerName="sampleCoreElements.controller.Homepage" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="homepage">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Cumulative Totals" subheader="Expenses" press="press">
+						<TileContent unit="Unit" footer="Footer Text">
+							<NumericContent value="4444" icon="sap-icon://line-charts" 
+											withMargin="false"
+											press="goToDetails"/>
+						</TileContent>
+					</GenericTile>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
